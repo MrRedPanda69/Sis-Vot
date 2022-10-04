@@ -3,9 +3,9 @@
 export const CadidatesPage = () => {
     return (
         <>
-            <div className='d-flex justify-content-evenly px-2'>
+            <div className='d-flex justify-content-evenly px-2 text-white'>
                 <div className='p-3 bg-iceberg rounded border border-secondary mt-4'>
-                    <h5>Candidato Jorge Loredo</h5>
+                    <h5><i className="fa-solid fa-user me-2"></i>Candidato Jorge Loredo</h5>
                     <hr />
                     <form className='mx-3'>
                         <div className="mb-3">
@@ -53,7 +53,7 @@ export const CadidatesPage = () => {
                 </div>
                 
                 <div className='p-3 bg-iceberg rounded border border-secondary mt-4'>
-                    <h5>Candidato Pablo Ibarra</h5>
+                    <h5><i className="fa-solid fa-user me-2"></i>Candidato Pablo Ibarra</h5>
                     <hr />
                     <form className='mx-3'>
                         <div className="mb-3">
@@ -101,7 +101,7 @@ export const CadidatesPage = () => {
                 </div>
 
                 <div className='p-3 bg-iceberg rounded border border-secondary mt-4'>
-                    <h5>Candidato Alan Martinez</h5>
+                    <h5><i className="fa-solid fa-user me-2"></i>Candidato Alan Martinez</h5>
                     <hr />
                     <form className='mx-3'>
                         <div className="mb-3">
