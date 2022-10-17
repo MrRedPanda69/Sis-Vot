@@ -49,7 +49,7 @@ export const AddCandidatePage = () => {
 
                         <div className="mb-3">
                             <label className="form-label">
-                                Partido
+                                Partido 
                             </label>
                             <input 
                                 type="text" 

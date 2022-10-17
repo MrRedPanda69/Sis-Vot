@@ -10,7 +10,7 @@ export const data = [
 ]
 
 export const options = {
-    title: 'Resultado de votaciones',
+    title: 'Resultado de votaciones ',
     is3D: true
 }
 

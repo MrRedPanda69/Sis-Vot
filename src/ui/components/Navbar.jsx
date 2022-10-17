@@ -53,7 +53,7 @@ export const Navbar = () => {
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
                 <ul className="navbar-nav ml-auto">
                     <span className='nav-item nav-link text-white'>
-                        <i className="fa-solid fa-user me-2"></i>Jorge
+                        <i className="fa-solid fa-user me-2"></i>Jorge Loredo
                     </span>
                     
                     <button

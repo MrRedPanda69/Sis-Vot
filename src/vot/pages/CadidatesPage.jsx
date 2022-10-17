@@ -12,7 +12,7 @@ export const CadidatesPage = () => {
                             <label 
                                 className="form-label"
                             >
-                                Nombre(s)
+                                Nombre(s) 
                             </label>
                             <input 
                                 type="text" 

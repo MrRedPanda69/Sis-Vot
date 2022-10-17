@@ -27,7 +27,7 @@ export const VotePage = () => {
 
                             <div className='mt-2 text-end'>
                                 <button className='btn bg-prussian-blue text-white px-4 mt-2'>
-                                    Votar
+                                    Votar 
                                 </button>
                             </div>
                         </div>
