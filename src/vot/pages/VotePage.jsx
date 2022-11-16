@@ -1,7 +1,19 @@
 import { useState } from 'react';
+import { useQuery, gql } from "@apollo/client";
+
+const GET_CANDIDATES = gql`
+  {
+    candidates(first: 5) {
+      id
+      firstName
+      lastName
+    }
+  }
+`;
 
 export const VotePage = () => {
     const [vote, setVote] = useState('');
+    const { loading, error, data } = useQuery(GET_CANDIDATES);
 
     const submitForm = e => {
         e.preventDefault();
@@ -19,10 +31,12 @@ export const VotePage = () => {
                     >
                         <div>
                             <select className='form-select form-select-lg'>
-                                <option defaultValue={true}>-- Selecciona un candidato --</option>
-                                <option value={1}>Jorge Gregorio Loredo Hernandez</option>
-                                <option value={2}>Pablo Cesar Ibarra Briones</option>
-                                <option value={3}>Alan Eduardo Martinez Rodriguez</option>
+                                <option disabled>-- Selecciona un candidato --</option>
+                                {
+                                    data?.candidates.map(({ id, firstName, lastName }) => (
+                                        <option key={id} value={id}>{firstName} {lastName}</option>
+                                    ))
+                                }
                             </select>
 
                             <div className='mt-2 text-end'>
